@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calc", "Calc\Calc.csproj", "{EEEE2C38-6CA8-4291-87DA-15C120B06F8E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcText", "CalcText\CalcText.csproj", "{21D7A2A2-680E-4219-9154-E026B3EA2604}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{EEEE2C38-6CA8-4291-87DA-15C120B06F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EEEE2C38-6CA8-4291-87DA-15C120B06F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EEEE2C38-6CA8-4291-87DA-15C120B06F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D7A2A2-680E-4219-9154-E026B3EA2604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D7A2A2-680E-4219-9154-E026B3EA2604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D7A2A2-680E-4219-9154-E026B3EA2604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D7A2A2-680E-4219-9154-E026B3EA2604}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,7 +9,18 @@
             <Setter Property="FontFamily" Value="Century Gothic"/>
             <Setter Property="Margin" Value="10"/>
             <Setter Property="Opacity" Value="0.70"/>
-            <Setter Property="Background" Value="#FFF8CFFF"/>
+            <Setter Property="Background" Value="#FFF1DBF0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="10"  Background="{TemplateBinding Background}" BorderThickness="1">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                            </ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
     </Application.Resources>
 </Application>

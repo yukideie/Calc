@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
-        Height="600" Width="500">
+        Height="750" Width="500">
     <Window.Background>
         <ImageBrush ImageSource="Picture/5c62b495f0e70168e19169e3.jpg"/>
     </Window.Background>
@@ -24,46 +24,53 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.ColumnSpan="4">
-            <TextBlock Text="Калькулятор" HorizontalAlignment="Center" FontFamily="Century Gothic"
-                       Height="40" Margin="10"
-                       FontSize="30"/>
-            <TextBox Height="100" Opacity="0.60" Margin="0 20"
-                     Text="fg"
-                     FontSize="55" FontFamily="Century Gothic"/>
+            
+            <TextBlock Height="100" Opacity="0.60" x:Name="tbConcl"
+                     Margin="5 70" TextAlignment="Right"
+                     FontSize="65" FontFamily="Century Gothic" Background="White"/>
         </StackPanel>
-        <Button Grid.Row="1" Content="7" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="2" Content="4" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="3" Content="1" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="4" Content="/" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="1" Grid.Column="1" Content="8" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="1" Grid.Column="2" Content="9" 
-                Style="{StaticResource btnStyle}" Background="#FFF1DBF0"/>
-        <Button Grid.Row="1" Grid.Column="3" Content="C" 
-                Style="{StaticResource btnStyle}" Background="#FFF7BE5B"/>
-        <Button Grid.Row="2" Grid.Column="1" Content="5" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="2" Grid.Column="2" Content="6" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="2" Grid.Column="3" Content="+" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="3" Grid.Column="1" Content="2" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="3" Grid.Column="2" Content="3" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="3" Grid.Column="3" Content="-" 
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="4" Grid.Column="1" Content="0"
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="4" Grid.Column="2" Content="*"
-                Style="{StaticResource btnStyle}"/>
-        <Button Grid.Row="4" Grid.Column="3" Content="=" 
-                Style="{StaticResource btnStyle}"/>
+        <Button Grid.Row="5" Content="±" x:Name="btnPM"
+                Style="{StaticResource btnStyle}" />
+        <Button Grid.Row="5" Grid.Column="1" Content="0" x:Name="btn0"
+                Style="{StaticResource btnStyle}" Click="btn0_Click"/>
+        <Button Grid.Row="5" Grid.Column="2" Content="," x:Name="btnComma"
+                Style="{StaticResource btnStyle}" Click="btnComma_Click"/>
+        <Button Grid.Row="5" Grid.Column="3" Content="=" x:Name="btnRes"
+                Style="{StaticResource btnStyle}" Click="btnRes_Click"/>
+        <Button Grid.Row="1" Content="C" x:Name="btnC"
+                Style="{StaticResource btnStyle}" Background="#FFF7BE5B" Click="btnC_Click"/>
+        <Button Grid.Row="2" Content="7" x:Name="btn7"
+                Style="{StaticResource btnStyle}" Click="btn7_Click"/>
+        <Button Grid.Row="3" Content="4" x:Name="btn4"
+                Style="{StaticResource btnStyle}" Click="btn4_Click"/>
+        <Button Grid.Row="4" Content="1" x:Name="btn1"
+                Style="{StaticResource btnStyle}" Click="btn1_Click"/>
+        <Button Grid.Row="1" Grid.Column="1" Content="CE" x:Name="btnCE"
+                Style="{StaticResource btnStyle}" Background="#FFF7BE5B" Click="btnCE_Click"/>
+        <Button Grid.Row="1" Grid.Column="2" Content="%" x:Name="btnProc"
+                Style="{StaticResource btnStyle}" Click="btnProc_Click" />
+        <Button Grid.Row="1" Grid.Column="3" Content="/" x:Name="btnDiv"
+                Style="{StaticResource btnStyle}" Click="btnDiv_Click" />
+        <Button Grid.Row="2" Grid.Column="1" Content="8" x:Name="btn8"
+                Style="{StaticResource btnStyle}" Click="btn8_Click"/>
+        <Button Grid.Row="2" Grid.Column="2" Content="9" x:Name="btn9"
+                Style="{StaticResource btnStyle}" Click="btn9_Click"/>
+        <Button Grid.Row="2" Grid.Column="3" Content="+" x:Name="btnPlus"
+                Style="{StaticResource btnStyle}" Click="btnPlus_Click"/>
+        <Button Grid.Row="3" Grid.Column="1" Content="5" x:Name="btn5"
+                Style="{StaticResource btnStyle}" Click="btn5_Click"/>
+        <Button Grid.Row="3" Grid.Column="2" Content="6" x:Name="btn6"
+                Style="{StaticResource btnStyle}" Click="btn6_Click"/>
+        <Button Grid.Row="3" Grid.Column="3" Content="-" x:Name="btnMinus"
+                Style="{StaticResource btnStyle}" Click="btnMinus_Click_1"/>
+        <Button Grid.Row="4" Grid.Column="1" Content="2" x:Name="btn2"
+                Style="{StaticResource btnStyle}" Click="btn2_Click"/>
+        <Button Grid.Row="4" Grid.Column="2" Content="3" x:Name="btn3"
+                Style="{StaticResource btnStyle}" Click="btn3_Click"/>
+        <Button Grid.Row="4" Grid.Column="3" Content="*" x:Name="btnMyltiply"
+                Style="{StaticResource btnStyle}" Click="btnMyltiply_Click"/>
     </Grid>
 </Window>

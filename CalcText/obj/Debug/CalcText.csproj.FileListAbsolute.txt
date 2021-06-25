@@ -1,0 +1,2 @@
+C:\Users\Lera\source\repos\Calc\CalcText\obj\Debug\CalcText.csproj.AssemblyReference.cache
+C:\Users\Lera\source\repos\Calc\CalcText\obj\Debug\CalcText.csproj.CoreCompileInputs.cache
